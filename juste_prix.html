@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    //Nom du joueur
+        let name = prompt( "Quel est ton nom?" );
+
+    // numéro aléatoire
+       const random = Math.floor(Math.random() * 100) + 1;
+    
+    // Nombre choisi par le joueur
+        let number = prompt( "Donnez un nombre entre 1 et 100" );
+        console.log(number);
+        console.log(random);
+    
+    // Condition comparative
+    
+    while (parseInt(number) != random) {
+
+        let value = parseInt(number);
+        if (value > random) {
+                alert("c'est moins !");
+                number = prompt( "Donnez un nombre entre 1 et 100" );
+                console.log(number);
+        }  else {
+            if (parseInt(number) < random) {
+                alert("C'est plus !");
+                number = prompt( "Donnez un nombre entre 1 et 100" );
+                console.log(number);
+            }
+        }};
+
+    alert(name + " gagne la partie !");
+
+
+
+
+
+    </script>
+</body>
+</html>
